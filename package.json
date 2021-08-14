@@ -1,0 +1,38 @@
+{
+  "name": "y-re-grid",
+  "version": "1.0.0",
+  "description": "grid sample",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch css/style.scss css/style.css",
+    "build": "webpack",
+    "dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takeaways/y-re-grid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takeaways/y-re-grid/issues"
+  },
+  "homepage": "https://github.com/takeaways/y-re-grid#readme",
+  "devDependencies": {
+    "@takeaways/ts-init": "^1.0.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
