@@ -6,7 +6,8 @@
   "scripts": {
     "sass": "sass --watch css/style.scss css/style.css",
     "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,13 @@
   "bugs": {
     "url": "https://github.com/takeaways/y-re-grid/issues"
   },
-  "homepage": "https://github.com/takeaways/y-re-grid#readme",
+  "homepage": "https://takeaways.github.io/y-re-grid",
   "devDependencies": {
     "@takeaways/ts-init": "^1.0.0",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.2.0",
     "sass": "^1.37.5",

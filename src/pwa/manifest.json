@@ -1,0 +1,21 @@
+{
+  "dir": "ltr",
+  "lang": "ko",
+  "name": "Grip App",
+  "short_name": "Grip App",
+  "scope": "/y-re-grid//",
+  "display": "standalone",
+  "start_url": "https://takeaways.github.io/y-re-grid//",
+  "background_color": "transparent",
+  "theme_color": "transparent",
+  "description": "참 개발자",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "images/460x460.png",
+      "type": "image/png",
+      "sizes": "460x460"
+    }
+  ]
+}

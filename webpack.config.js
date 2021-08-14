@@ -8,7 +8,7 @@ module.exports = {
   mode: "production",
   entry: "./src/index.ts",
   output: {
-    filename: "[name].js",
+    filename: "[name].[hash].js",
     path: path.resolve("build"),
   },
   module: {
@@ -25,13 +25,17 @@ module.exports = {
       template: path.resolve(__dirname, "index.html"),
     }),
     new MiniCssExtractPlugin({
-      filename: "style.css",
+      filename: "[name].[contenthash].css",
     }),
     new CopyPlugin({
       patterns: [
         {
           from: path.resolve(__dirname, "src/assets"),
           to: path.resolve(__dirname, "build/assets"),
+        },
+        {
+          from: path.resolve(__dirname, "src/pwa"),
+          to: path.resolve(__dirname, "build"),
         },
       ],
     }),
